@@ -51,8 +51,8 @@ def main():
                              '  If there are left-over masternode rewards, generate three extra transactions with same date as masternode deposit: ' +
                              ' 1. Deposit transaction of left-over ADA with classification Non-Taxable In' +
                              ' 2. Withdraw transaction of left-over ADA with classification Payment' +
-                             ' 3. Deposit transaction of left-over ADA with classification Interest.'  +
-                             ' Additionally, after calculation, the total interest ADA within the calculated time window will be displayed on standard out.' +
+                             ' 3. Deposit transaction of left-over ADA with classification Income.'  +
+                             ' Additionally, after calculation, the total owed ADA within the calculated time window will be displayed on standard out.' +
                              ' Note: Currently, this parameter is only implemented for the blockpit exporter')
     args = parser.parse_args()
 
