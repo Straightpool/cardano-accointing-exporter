@@ -29,9 +29,9 @@ def export_reward_history_for_wallet(wallet: Wallet, currency, mastersplit) -> L
                 if (leftover > 0):
                     rewards.append([reward.reward_time, wallet.name.split('/')[1], 'Non-Taxable In', '', '', 'ADA', leftover, '', '', '', ''])
                     rewards.append([reward.reward_time, wallet.name.split('/')[1], 'Payment', 'ADA', leftover, '', '', '', '', '', ''])
-                    rewards.append([reward.reward_time, wallet.name.split('/')[1], 'Interest', '', '', 'ADA', leftover, '', '', '', ''])
+                    rewards.append([reward.reward_time, wallet.name.split('/')[1], 'Income', '', '', 'ADA', leftover, '', '', '', ''])
     if mastersplit > 0:
-        print(f'---- total interest is: ' + str(totalleftover))
+        print(f'---- total owed payment is: ' + str(totalleftover))
     return rewards
 
 
